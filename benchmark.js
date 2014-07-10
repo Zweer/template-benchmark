@@ -1,3 +1,5 @@
+var fs = require('fs');
+
 var data = require('./data');
 
 var count = 100000;
@@ -17,6 +19,10 @@ var coffeekup = require('./coffeekup/coffeekup.js');
 var underscore = require('./underscore/underscore.js');
 var gaikan = require('./gaikan/gaikan.js');
 
+if (!fs.existsSync(__dirname + '/results/')) {
+  fs.mkdirSync(__dirname + '/results/');
+}
+
 var test = function(name, sample, cb) {
 	var i = 0;
 	var start;
@@ -24,6 +30,11 @@ var test = function(name, sample, cb) {
 		i++;
 		if (i === count) {
 			var now = Date.now();
+      if (!fs.existsSync(__dirname + '/results/' + name)) {
+        fs.mkdirSync(__dirname + '/results/' + name);
+      }
+      console.log(html);
+      fs.writeFileSync(__dirname + '/results/' + name + '/escaped.html', html);
 			cb(null, name, now - start);
 		}
 	};
@@ -42,6 +53,7 @@ var testUnescaped = function(name, sample, cb) {
 		i++;
 		if (i === count) {
 			var now = Date.now();
+      fs.writeFileSync(__dirname + '/results/' + name + '/unescaped.html', html);
 			cb(null, name, now - start);
 		}
 	};
