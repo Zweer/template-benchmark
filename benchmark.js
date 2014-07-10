@@ -26,7 +26,7 @@ var test = function(name, sample, cb) {
 			var now = Date.now();
 			cb(null, name, now - start);
 		}
-	}
+	};
 	sample.prepare(data, function() {
 		start = Date.now();
 		for (var j = 0; j < count; j++) {
@@ -44,7 +44,7 @@ var testUnescaped = function(name, sample, cb) {
 			var now = Date.now();
 			cb(null, name, now - start);
 		}
-	}
+	};
 	sample.prepareUnescaped(data, function() {
 		start = Date.now();
 		for (var j = 0; j < count; j++) {
