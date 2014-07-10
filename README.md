@@ -16,94 +16,91 @@
 - [Swig](https://github.com/paularmstrong/swig) v0.13.5
 - [Underscore](https://github.com/documentcloud/underscore) v1.4.4 ([website](http://underscorejs.org/))
 
+(I can't make Gaikan working...pull request accepted!!!)
+
 ## Test environment
 
-- CPU: Intel Core i5 450M 2.4Ghz
-- OS: Ubuntu Server 12.04
-- Node.JS version: 0.8.21
+- CPU: Intel Core i5 750 2.67GHz
+- OS: Windows 8
+- Node.JS version: 0.11.13
 
 ## Results
 
 	Rendering 100000 templates:
 
 	ECT
-	  Escaped   : 2180ms
-	  Unescaped : 133ms
-	  Total     : 2313ms
+    Escaped   : 2953ms
+    Unescaped : 110ms
+    Total     : 3063ms
 
-	Dust
-	  Escaped   : 2547ms
-	  Unescaped : 363ms
-	  Total     : 2910ms
+  Dust
+    Escaped   : 4549ms
+    Unescaped : 968ms
+    Total     : 5517ms
 
-	Hogan.js
-	  Escaped   : 3252ms
-	  Unescaped : 758ms
-	  Total     : 4010ms
+  Hogan.js
+    Escaped   : 3626ms
+    Unescaped : 429ms
+    Total     : 4055ms
 
-	Gaikan
-	  Escaped   : 4288ms
-	  Unescaped : 85ms
-	  Total     : 4373ms
+  Fest
+    Escaped   : 2206ms
+    Unescaped : 535ms
+    Total     : 2741ms
 
-	Fest
-	  Escaped   : 4179ms
-	  Unescaped : 265ms
-	  Total     : 4444ms
+  EJS without `with`
+    Escaped   : 4578ms
+    Unescaped : 404ms
+    Total     : 4982ms
 
-	EJS without `with`
-	  Escaped   : 4526ms
-	  Unescaped : 485ms
-	  Total     : 5011ms
+  doT
+    Escaped   : 2412ms
+    Unescaped : 60ms
+    Total     : 2472ms
 
-	doT
-	  Escaped   : 5329ms
-	  Unescaped : 82ms
-	  Total     : 5411ms
+  Swig
+    Escaped   : 6355ms
+    Unescaped : 934ms
+    Total     : 7289ms
 
-	Swig
-	  Escaped   : 5020ms
-	  Unescaped : 407ms
-	  Total     : 5427ms
+  Underscore
+    Escaped   : 2947ms
+    Unescaped : 1800ms
+    Total     : 4747ms
 
-	Underscore
-	  Escaped   : 5775ms
-	  Unescaped : 2486ms
-	  Total     : 8261ms
+  EJS
+    Escaped   : 7712ms
+    Unescaped : 2158ms
+    Total     : 9870ms
 
-	Eco
-	  Escaped   : 8512ms
-	  Unescaped : 991ms
-	  Total     : 9503ms
+  Eco
+    Escaped   : 5938ms
+    Unescaped : 706ms
+    Total     : 6644ms
 
-	EJS
-	  Escaped   : 6316ms
-	  Unescaped : 2734ms
-	  Total     : 9050ms
+  Handlebars.js
+    Escaped   : 2010ms
+    Unescaped : 340ms
+    Total     : 2350ms
 
-	Handlebars.js
-	  Escaped   : 7815ms
-	  Unescaped : 2573ms
-	  Total     : 10388ms
+  Jade without `with`
+    Escaped   : 4245ms
+    Unescaped : 674ms
+    Total     : 4919ms
 
-	Jade without `with`
-	  Escaped   : 8566ms
-	  Unescaped : 2982ms
-	  Total     : 11548ms
+  CoffeeKup
+    Escaped   : 4534ms
+    Unescaped : 10446ms
+    Total     : 14980ms
 
-	CoffeeKup
-	  Escaped   : 4968ms
-	  Unescaped : 9983ms
-	  Total     : 14951ms
-
-	Jade
-	  Escaped   : 18330ms
-	  Unescaped : 12095ms
-	  Total     : 30425ms
+  Jade
+    Escaped   : 12837ms
+    Unescaped : 7171ms
+    Total     : 20008ms
 
 ## Usage
 
-	git clone git://github.com/baryshev/template-benchmark.git
+	git clone git://github.com/Zweer/template-benchmark.git
 	cd template-benchmark
 	npm install
 	node ./benchmark.js
