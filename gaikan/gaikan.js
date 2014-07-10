@@ -2,15 +2,18 @@ var gaikan = require('gaikan');
 var compiled;
 var tplData;
 
+gaikan.options.enableCache = false;
+gaikan.options.enableCompression = true;
+
 module.exports.prepare = function (data, done) {
 	tplData = data;
-	compiled = gaikan.compileFile('tpl_escaped', 'gaikan', undefined, true);
+	compiled = gaikan.compileFromFile('tpl_escaped');
 	done();
 };
 
 module.exports.prepareUnescaped = function (data, done) {
 	tplData = data;
-	compiled = gaikan.compileFile('tpl_unescaped', 'gaikan', undefined, true);
+	compiled = gaikan.compileFromFile('tpl_unescaped');
 	done();
 };
 
