@@ -2,8 +2,7 @@ var gaikan = require('gaikan');
 var compiled;
 var tplData;
 
-gaikan.options.enableCache = false;
-gaikan.options.enableCompression = true;
+gaikan.options.directories = ['gaikan'];
 
 module.exports.prepare = function (data, done) {
 	tplData = data;
