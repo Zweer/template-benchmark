@@ -33,7 +33,6 @@ var test = function(name, sample, cb) {
       if (!fs.existsSync(__dirname + '/results/' + name)) {
         fs.mkdirSync(__dirname + '/results/' + name);
       }
-      console.log(html);
       fs.writeFileSync(__dirname + '/results/' + name + '/escaped.html', html);
 			cb(null, name, now - start);
 		}
