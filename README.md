@@ -98,6 +98,8 @@
     Unescaped : 7171ms
     Total     : 20008ms
 
+View the results in a Fiddle [here](http://jsfiddle.net/zweer/bkwLK/)
+
 ## Usage
 
 	git clone git://github.com/Zweer/template-benchmark.git
