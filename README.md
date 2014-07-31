@@ -26,77 +26,77 @@
 
 ## Results
 
-	Rendering 100000 templates:
+    Rendering 100000 templates:
 
-	ECT
-    Escaped   : 2953ms
-    Unescaped : 110ms
-    Total     : 3063ms
+    ECT
+      Escaped   : 2953ms
+      Unescaped : 110ms
+      Total     : 3063ms
 
-  Dust
-    Escaped   : 4549ms
-    Unescaped : 968ms
-    Total     : 5517ms
+    Dust
+      Escaped   : 4549ms
+      Unescaped : 968ms
+      Total     : 5517ms
 
-  Hogan.js
-    Escaped   : 3626ms
-    Unescaped : 429ms
-    Total     : 4055ms
+    Hogan.js
+      Escaped   : 3626ms
+      Unescaped : 429ms
+      Total     : 4055ms
 
-  Fest
-    Escaped   : 2206ms
-    Unescaped : 535ms
-    Total     : 2741ms
+    Fest
+      Escaped   : 2206ms
+      Unescaped : 535ms
+      Total     : 2741ms
 
-  EJS without `with`
-    Escaped   : 4578ms
-    Unescaped : 404ms
-    Total     : 4982ms
+    EJS without `with`
+      Escaped   : 4578ms
+      Unescaped : 404ms
+      Total     : 4982ms
 
-  doT
-    Escaped   : 2412ms
-    Unescaped : 60ms
-    Total     : 2472ms
+    doT
+      Escaped   : 2412ms
+      Unescaped : 60ms
+      Total     : 2472ms
 
-  Swig
-    Escaped   : 6355ms
-    Unescaped : 934ms
-    Total     : 7289ms
+    Swig
+      Escaped   : 6355ms
+      Unescaped : 934ms
+      Total     : 7289ms
 
-  Underscore
-    Escaped   : 2947ms
-    Unescaped : 1800ms
-    Total     : 4747ms
+    Underscore
+      Escaped   : 2947ms
+      Unescaped : 1800ms
+      Total     : 4747ms
 
-  EJS
-    Escaped   : 7712ms
-    Unescaped : 2158ms
-    Total     : 9870ms
+    EJS
+      Escaped   : 7712ms
+      Unescaped : 2158ms
+      Total     : 9870ms
 
-  Eco
-    Escaped   : 5938ms
-    Unescaped : 706ms
-    Total     : 6644ms
+    Eco
+      Escaped   : 5938ms
+      Unescaped : 706ms
+      Total     : 6644ms
 
-  Handlebars.js
-    Escaped   : 2010ms
-    Unescaped : 340ms
-    Total     : 2350ms
+    Handlebars.js
+      Escaped   : 2010ms
+      Unescaped : 340ms
+      Total     : 2350ms
 
-  Jade without `with`
-    Escaped   : 4245ms
-    Unescaped : 674ms
-    Total     : 4919ms
+    Jade without `with`
+      Escaped   : 4245ms
+      Unescaped : 674ms
+      Total     : 4919ms
 
-  CoffeeKup
-    Escaped   : 4534ms
-    Unescaped : 10446ms
-    Total     : 14980ms
+    CoffeeKup
+      Escaped   : 4534ms
+      Unescaped : 10446ms
+      Total     : 14980ms
 
-  Jade
-    Escaped   : 12837ms
-    Unescaped : 7171ms
-    Total     : 20008ms
+    Jade
+      Escaped   : 12837ms
+      Unescaped : 7171ms
+      Total     : 20008ms
 
 View the results in a Fiddle [here](http://jsfiddle.net/zweer/bkwLK/)
 
